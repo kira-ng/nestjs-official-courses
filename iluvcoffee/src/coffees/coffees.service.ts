@@ -14,9 +14,9 @@ export class CoffeesService {
     },
   ];
 
-  create(createCoffeeDto: CreateCoffeeDto) {
-    // this.coffees.push(createCoffeeDto);
-    return 'This action adds a new coffee';
+  create(createCoffeeDto: any) {
+    this.coffees.push(createCoffeeDto);
+    return createCoffeeDto;
   }
 
   findAll() {
