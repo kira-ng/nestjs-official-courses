@@ -24,7 +24,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       password: 'asdf1234',
       database: 'iluvcoffee',
       autoLoadEntities: true,
-      synchronize: true,
+      synchronize: false,
     }),
   ],
   controllers: [AppController],
